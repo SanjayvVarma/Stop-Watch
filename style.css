@@ -1,0 +1,55 @@
+body {
+    /* background-image: radial-gradient(circle, red, orange, yellow, green, rgb(255, 0, 204), indigo, rgb(29, 140, 177), lightgreen); */
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    animation: bd 5s infinite ease-in-out;
+}
+@keyframes bd {
+    0%{
+        background-image: radial-gradient(circle, red, orange, yellow, green, rgb(255, 0, 204), indigo, rgb(29, 140, 177), lightgreen);
+    }
+    50%{
+        background-image: conic-gradient(red 120deg, yellow 45deg, green 260deg, indigo 45deg);
+    }
+    100%{
+        background-image: linear-gradient(to right, red , yellow);
+    }
+}
+
+#timer {
+    font-size: 8rem;
+    font-weight: 700;
+    text-shadow: 3px 5px #2799db;
+    color: #042065;
+    width: 550px;
+    text-align: center;
+    margin: 40px auto;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: lightseagreen;
+    color: white;
+    border: none;
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding: 1.5rem 4rem;
+    margin: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: #4e26d1;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
